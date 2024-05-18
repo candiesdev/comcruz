@@ -1,0 +1,27 @@
+:root {
+    --CCR--header--bgcolor: #ff8800;
+    --CCR--navbar--bgcolor: #ff8800;
+    --CCR--footer--bgcolor: #ff8800;
+    --CCR--cards--width: 18rem;
+}
+
+.CCR_header {
+    background-color: var(--CCR--header--bgcolor);
+}
+
+.CCR_navbar {
+    background-color: var(--CCR--navbar--bgcolor);
+}
+
+.CCR_cards {
+    width: var(--CCR--cards--width);
+}
+
+.CCR_price {
+    font-weight: bold;
+}
+
+.CCR_footer {
+    height: 80px;
+    background-color: var(--CCR--footer--bgcolor);
+}

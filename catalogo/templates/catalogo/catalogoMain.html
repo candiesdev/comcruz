@@ -1,0 +1,25 @@
+{% load static %}
+
+<main class="mainContainer">
+  <!-- Content -->
+  <!-- Catalog grid -->
+  <div class="catalogo_mt mb-3 container align-items-center">
+    <div class="row row-cols-1 row-cols-md-4 g-3">
+        {% for key, value in inventory.items %}
+        <div class="col">
+          <div class="card h-100 w-100 CCR_cards">
+            <img src="{{ value.img_url }}" class="card-img-top" alt="{{ value.description }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ value.brand }}</h5>
+              <p>{{ value.part_number }}</p>
+              <p class="card-text">{{ value.description }}</p>
+            </div>
+            <div class="card-footer">
+              <h6 class="CCR_price">Precio: {{ value.price }} Bs.</h6>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</main>

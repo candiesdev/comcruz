@@ -1,0 +1,8 @@
+.catalogo_mt {
+    margin-top: 90px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
